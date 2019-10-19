@@ -1,0 +1,19 @@
+
+.center-panel-internal {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture-panel {
+  flex: 2;
+}
+
+.summary-panel {
+  flex: 3;
+}
+
+@media (min-width: 480px) {
+  .center-panel-internal {
+    flex-direction: row;
+  }
+}
