@@ -2,41 +2,16 @@
 import React from 'react';
 
 import PropertyField from '../../../PropertyField';
+import {
+  ConditionPropertyValue,
+  USSizePropertyValue,
+  QuantityPropertyValue,
+  ShippingPropertyValue,
+  DeliveryPropertyValue,
+  PaymentsPropertyValue,
+  ReturnsPropertyValue
+} from './elements';
 import './left-summary.css';
-
-const ConditionPropertyValue = () => {
-  return (
-    <strong className='bold-font-color'>New with box</strong>
-  );
-};
-
-// ray test touch <
-const USSizePropertyValue = () => {
-  return (
-    <select style={{
-      border: '1px solid lightgray',
-      width: '190px',
-      borderRadius: '3px'
-    }}>
-      <option value='select'>- Select -</option>
-      <option value='11' selected>11</option>
-    </select>
-  );
-};
-
-const QuantityPropertyValue = () => {
-  const dummyQuantity = 1;
-  return (
-    <div>
-      <input
-        id='quantity'
-        name='quantity'
-        type='number'
-        defaultValue={dummyQuantity} />
-      <span>{`${dummyQuantity} available`}</span>
-    </div>
-  );
-};
 
 const upperPropertyFields = [
   {
@@ -52,17 +27,46 @@ const upperPropertyFields = [
     value: <QuantityPropertyValue />
   }
 ];
-// ray test touch >
+
+const lowerPropertyFields = [
+  {
+    label: 'Shipping',
+    value: <ShippingPropertyValue />,
+    verticalAlignTop: true
+  },
+  {
+    label: 'Delivery',
+    value: <DeliveryPropertyValue />,
+    verticalAlignTop: true
+  },
+  {
+    label: 'Payments',
+    value: <PaymentsPropertyValue />
+  },
+  {
+    label: 'Returns',
+    value: <ReturnsPropertyValue />
+  }
+];
 
 const LeftSummary = () => {
   return (
     <div className='generic-font-color'>
       <div className='product-name bold-font-color'>Nike Flex Run 2016 Men's Runinng Shoe Crimson/Black 830369-601 sz 11</div>
-      {/* ray test touch < */}
       { upperPropertyFields.map(propertyField => (
-        <PropertyField key={propertyField.label} label={propertyField.label} value={propertyField.value} />
+        <PropertyField
+          key={propertyField.label}
+          verticalAlignTop={propertyField.verticalAlignTop}
+          label={propertyField.label}
+          value={propertyField.value} />
       )) }
-      {/* ray test touch > */}
+      { lowerPropertyFields.map(propertyField => (
+        <PropertyField
+          key={propertyField.label}
+          verticalAlignTop={propertyField.verticalAlignTop}
+          label={propertyField.label}
+          value={propertyField.value} />
+      )) }
     </div>
   );
 };
