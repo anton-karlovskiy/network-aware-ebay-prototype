@@ -5,4 +5,7 @@
   font-weight: bold;
   line-height: normal;
   border-bottom: 1px solid #CCC;
+  /* ray test touch < */
+  margin-right: 14px;
+  /* ray test touch > */
 }
