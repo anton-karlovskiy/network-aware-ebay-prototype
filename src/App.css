@@ -1,6 +1,13 @@
 
 .App {
-  text-align: center;
   margin: 0 auto;
   max-width: 1458px;
+}
+
+.generic-font-color {
+  color: #636363;
+}
+
+.bold-font-color {
+  color: #333;
 }

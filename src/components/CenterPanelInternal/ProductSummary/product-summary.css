@@ -1,0 +1,14 @@
+
+.product-summary {
+  display: flex;
+  margin-right: 16px;
+}
+
+.left-product-summary {
+  flex: 2;
+}
+
+.right-product-summary {
+  flex: 1;
+}
+
