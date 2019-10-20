@@ -24,6 +24,20 @@ const USSizePropertyValue = () => {
   );
 };
 
+const QuantityPropertyValue = () => {
+  const dummyQuantity = 1;
+  return (
+    <div>
+      <input
+        id='quantity'
+        name='quantity'
+        type='number'
+        defaultValue={dummyQuantity} />
+      <span>{`${dummyQuantity} available`}</span>
+    </div>
+  );
+};
+
 const upperPropertyFields = [
   {
     label: 'Condition',
@@ -32,6 +46,10 @@ const upperPropertyFields = [
   {
     label: 'US Size',
     value: <USSizePropertyValue />
+  },
+  {
+    label: 'Quantity',
+    value: <QuantityPropertyValue />
   }
 ];
 // ray test touch >
