@@ -13,10 +13,17 @@ const CenterPanelInternal = () => {
         <MagnificProduct
           altMessage="Nike Flex Run 2016 Men's Runinng Shoe Crimson/Black 830369-601 sz 11"
           smallImageSrc={AaQAAOSwawpXqRI0_400}
-          largeImageSrc={AaQAAOSwawpXqRI0_1600} />
+          largeImageSrc={AaQAAOSwawpXqRI0_1600}
+          externalRender={{
+            enlargedImagePortalId: 'enlarged-picture-panel',
+            enlargedImageContainerDimensions: {
+              width: '185%',
+              height: '120%'
+            }
+          }} />
       </div>
+      <div id='enlarged-picture-panel' className='enlarged-picture-panel' />
       <div className='summary-panel'>
-        Summary Panel
       </div>
     </div>
   );
