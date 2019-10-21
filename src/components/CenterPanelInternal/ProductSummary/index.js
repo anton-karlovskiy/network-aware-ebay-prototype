@@ -2,6 +2,7 @@
 import React from 'react';
 
 import LeftSummary from './LeftSummary';
+import RightSummary from './RightSummary';
 import './product-summary.css';
 
 const ProductSummary = () => {
@@ -11,7 +12,7 @@ const ProductSummary = () => {
         <LeftSummary />
       </div>
       <div className='right-product-summary'>
-        Right Summary
+        <RightSummary />
       </div>
     </div>
   );

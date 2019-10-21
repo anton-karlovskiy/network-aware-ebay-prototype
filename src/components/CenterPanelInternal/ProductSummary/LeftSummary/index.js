@@ -56,7 +56,7 @@ const lowerPropertyFields = [
 
 const LeftSummary = () => {
   return (
-    <div className='generic-font-color'>
+    <div className='left-summary generic-font-color'>
       <div className='product-name bold-font-color'>Nike Flex Run 2016 Men's Runinng Shoe Crimson/Black 830369-601 sz 11</div>
       { upperPropertyFields.map(propertyField => (
         <PropertyField

@@ -32,7 +32,7 @@ const ShoppingCard = () => {
             </div>
             <div className='add-to-watchlist'>
               <span className='eye'></span>
-              <span className='text'>Add to Watchlist</span>
+              <a href='#' className='text'>Add to Watchlist</a>
             </div>
           </div>
         </div>

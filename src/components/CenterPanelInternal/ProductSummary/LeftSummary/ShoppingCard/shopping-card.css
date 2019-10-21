@@ -52,7 +52,6 @@
 .add-to-watchlist {
   cursor: pointer;
   font-size: 12px;
-  color: #0654ba;
   margin-top: 12px;
 }
 
@@ -64,6 +63,10 @@
   width: .9375rem;
   height: .75rem;
   display: inline-block;
+}
+
+.add-to-watchlist > .text {
+  text-decoration: none;
 }
 
 .add-to-watchlist > .text:hover {
