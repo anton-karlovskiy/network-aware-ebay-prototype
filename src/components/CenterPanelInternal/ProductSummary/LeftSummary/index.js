@@ -10,13 +10,18 @@ import {
   DeliveryPropertyValue,
   PaymentsPropertyValue,
   ReturnsPropertyValue
-} from './elements';
+} from './assemblies';
+import ShoppingCard from './ShoppingCard';
 import './left-summary.css';
 
 const upperPropertyFields = [
   {
     label: 'Condition',
     value: <ConditionPropertyValue />
+  },
+  {
+    label: '',
+    value: null
   },
   {
     label: 'US Size',
@@ -60,6 +65,7 @@ const LeftSummary = () => {
           label={propertyField.label}
           value={propertyField.value} />
       )) }
+      <ShoppingCard />
       { lowerPropertyFields.map(propertyField => (
         <PropertyField
           key={propertyField.label}
