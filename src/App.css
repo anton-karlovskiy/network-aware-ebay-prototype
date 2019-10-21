@@ -15,3 +15,8 @@
 a {
   color: #0654ba;
 }
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
