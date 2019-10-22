@@ -9,20 +9,12 @@
 }
 
 .picture-sibling-panel {
-  width: 65%;
+  width: 64%;
 }
 
-.enlarged-picture-panel {
-  /* ray test touch < */
+.display-none {
   display: none;
-  /* ray test touch > */
 }
-
-/* ray test touch < */
-.summary-panel {
-  /* display: none; */
-}
-/* ray test touch > */
 
 @media (min-width: 480px) {
   .center-panel-internal {

@@ -4,8 +4,8 @@ import ReactImageMagnify from 'react-image-magnify';
 
 import './magnific-product.css';
 
-const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRender }) => {
-  return (
+const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRender, hoverOnProduct }) => (
+  <div onMouseEnter={hoverOnProduct} onMouseLeave={hoverOnProduct}>
     <ReactImageMagnify {...{
       smallImage: {
           alt: altMessage,
@@ -20,7 +20,7 @@ const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRen
       imageClassName: 'small-image',
       ...externalRender
     }} />
-  );
-};
+  </div>
+);
 
 export default MagnificProduct;
