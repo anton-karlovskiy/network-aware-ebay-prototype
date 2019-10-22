@@ -5,7 +5,7 @@
 
 ## Installation
 ```
-git clone https://api.glitch.com/git/anton-karlovskiy-network-aware-ebay
+git clone https://github.com/anton-karlovskiy/network-aware-ebay.git
 npm install
 npm start
 npm run build
