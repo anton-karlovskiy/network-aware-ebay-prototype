@@ -1,26 +1,50 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import ReactImageMagnify from 'react-image-magnify';
+import Modal from 'react-responsive-modal';
 
 import './magnific-product.css';
 
-const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRender, hoverOnProduct }) => (
-  <div onMouseEnter={hoverOnProduct} onMouseLeave={hoverOnProduct}>
-    <ReactImageMagnify {...{
-      smallImage: {
-          alt: altMessage,
-          isFluidWidth: true,
-          src: smallImageSrc
-      },
-      largeImage: {
-          src: largeImageSrc,
-          width: 1200,
-          height: 1800
-      },
-      imageClassName: 'small-image',
-      ...externalRender
-    }} />
-  </div>
-);
+const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRender, setIsHoverOnProduct }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const onCloseHandler = () => {
+    setIsModalOpen(false);
+  };
+  const onOpenHandler = () => {
+    setIsHoverOnProduct(false);
+    setIsModalOpen(true);
+  };
+  return (
+    <>
+      <div onClick={onOpenHandler} onMouseEnter={() => setIsHoverOnProduct(true)} onMouseLeave={() => setIsHoverOnProduct(false)}>
+        <ReactImageMagnify {...{
+          smallImage: {
+              alt: altMessage,
+              isFluidWidth: true,
+              src: smallImageSrc
+          },
+          largeImage: {
+              src: largeImageSrc,
+              width: 1200,
+              height: 1800
+          },
+          imageClassName: 'small-image',
+          ...externalRender
+        }} />
+      </div>
+      <Modal
+        styles={{
+          modal: {
+            maxWidth: 'unset'
+          }
+        }}
+        open={isModalOpen}
+        onClose={onCloseHandler}
+        center>
+        <img width='100%' height='auto' src={largeImageSrc} alt={altMessage} />
+      </Modal>
+    </>
+  );
+};
 
 export default MagnificProduct;

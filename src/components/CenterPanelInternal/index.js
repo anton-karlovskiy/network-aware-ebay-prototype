@@ -10,14 +10,14 @@ import AaQAAOSwawpXqRI0_1600 from '../../assets/product-images/AaQAAOSwawpXqRI0/
 const CenterPanelInternal = () => {
   const [isHoverOnProduct, setIsHoverOnProduct] = useState(false);
 
-  const hoverOnProductHandler = () => {
-    setIsHoverOnProduct(!isHoverOnProduct);
+  const setIsHoverOnProductHandler = isHoverOnProduct => {
+    setIsHoverOnProduct(isHoverOnProduct);
   };
   return (
     <div className='center-panel-internal'>
       <div className='picture-panel'>
         <MagnificProduct
-          hoverOnProduct={hoverOnProductHandler}
+          setIsHoverOnProduct={setIsHoverOnProductHandler}
           altMessage="Nike Flex Run 2016 Men's Runinng Shoe Crimson/Black 830369-601 sz 11"
           smallImageSrc={AaQAAOSwawpXqRI0_400}
           largeImageSrc={AaQAAOSwawpXqRI0_1600}
