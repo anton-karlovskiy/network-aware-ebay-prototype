@@ -28,7 +28,7 @@ const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRen
               width: 1200,
               height: 1800
           },
-          imageClassName: 'small-image',
+          imageClassName: 'magnific-small-image',
           ...externalRender
         }} />
       </div>
