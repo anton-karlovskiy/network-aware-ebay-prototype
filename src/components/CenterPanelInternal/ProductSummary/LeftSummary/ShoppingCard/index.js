@@ -32,7 +32,9 @@ const ShoppingCard = () => {
             </div>
             <div className='add-to-watchlist'>
               <span className='eye'></span>
-              <a href='#' className='text'>Add to Watchlist</a>
+              <a href='#https://www.ebay.com/itm/Nike-Flex-Run-2016-Mens-Runinng-Shoe-Crimson-Black-830369-601-sz-11/152669264255?var=452220570389&hash=item238bcc197f:m:m8JGGvA8IYbBZVTWARQvq5g' className='text'>
+                Add to Watchlist
+              </a>
             </div>
           </div>
         </div>

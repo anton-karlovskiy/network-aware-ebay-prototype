@@ -9,9 +9,9 @@ const SellerInformation = () => {
     <WhiteCardWrapper className='seller-information'>
       <div className='title bold-font-color no-veritcal-spacing'>Seller information</div>
       <div className='flexbox no-veritcal-spacing'>
-        <a class='no-decoration' href='https://www.ebay.com/usr/banginkicks?_trksid=p2047675.l2559'><strong>banginkicks</strong>&nbsp;</a>
+        <a className='no-decoration' href='https://www.ebay.com/usr/banginkicks?_trksid=p2047675.l2559'><strong>banginkicks</strong>&nbsp;</a>
         <span>(</span>
-        <a class='no-decoration' href='http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback&userid=banginkicks&iid=152669264255&ssPageName=VIP:feedback&ftab=FeedbackAsSeller&rt=nc&_trksid=p2047675.l2560'>30614</a>
+        <a className='no-decoration' href='http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback&userid=banginkicks&iid=152669264255&ssPageName=VIP:feedback&ftab=FeedbackAsSeller&rt=nc&_trksid=p2047675.l2560'>30614</a>
         <span className='star-mark' />
         <span>)</span>
       </div>
