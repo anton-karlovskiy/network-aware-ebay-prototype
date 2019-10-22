@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ReactImageMagnify from 'react-image-magnify';
 import Modal from 'react-responsive-modal';
 
+import SimpleProduct from '../SimpleProduct';
 import './magnific-product.css';
 
 const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRender, setIsHoverOnProduct }) => {
@@ -16,21 +17,26 @@ const MagnificProduct = ({ smallImageSrc, largeImageSrc, altMessage, externalRen
   };
   return (
     <>
-      <div onClick={onOpenHandler} onMouseEnter={() => setIsHoverOnProduct(true)} onMouseLeave={() => setIsHoverOnProduct(false)}>
-        <ReactImageMagnify {...{
-          smallImage: {
-              alt: altMessage,
-              isFluidWidth: true,
-              src: smallImageSrc
-          },
-          largeImage: {
-              src: largeImageSrc,
-              width: 1200,
-              height: 1800
-          },
-          imageClassName: 'magnific-small-image',
-          ...externalRender
-        }} />
+      <div onClick={onOpenHandler}>
+        <div className='magnific' onMouseEnter={() => setIsHoverOnProduct(true)} onMouseLeave={() => setIsHoverOnProduct(false)}>
+          <ReactImageMagnify {...{
+            smallImage: {
+                alt: altMessage,
+                isFluidWidth: true,
+                src: smallImageSrc
+            },
+            largeImage: {
+                src: largeImageSrc,
+                width: 1200,
+                height: 1800
+            },
+            imageClassName: 'magnific-small-image',
+            ...externalRender
+          }} />
+        </div>
+        <div className='simple'>
+          <SimpleProduct smallImageSrc={smallImageSrc} altMessage={altMessage} />
+        </div>
       </div>
       <Modal
         styles={{
