@@ -1,12 +1,40 @@
 
-.left-summary {
-  margin-right: 20px;
-}
-
 .product-name {
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
   line-height: normal;
   border-bottom: 1px solid #CCC;
+}
+
+.lower-property-fields {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .lower-property-fields {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .left-summary {
+    margin-right: 12px;
+  }
+
+  .lower-property-fields {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .left-summary {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .lower-property-fields {
+    display: block;
+  }
 }

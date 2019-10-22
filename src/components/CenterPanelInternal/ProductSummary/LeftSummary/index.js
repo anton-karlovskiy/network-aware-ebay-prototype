@@ -58,21 +58,25 @@ const LeftSummary = () => {
   return (
     <div className='left-summary generic-font-color'>
       <div className='product-name bold-font-color'>Nike Flex Run 2016 Men's Runinng Shoe Crimson/Black 830369-601 sz 11</div>
-      { upperPropertyFields.map(propertyField => (
-        <PropertyField
-          key={propertyField.label}
-          verticalAlignTop={propertyField.verticalAlignTop}
-          label={propertyField.label}
-          value={propertyField.value} />
-      )) }
+      <div className='upper-property-fields'>
+        { upperPropertyFields.map(propertyField => (
+          <PropertyField
+            key={propertyField.label}
+            verticalAlignTop={propertyField.verticalAlignTop}
+            label={propertyField.label}
+            value={propertyField.value} />
+        )) }
+      </div>
       <ShoppingCard />
-      { lowerPropertyFields.map(propertyField => (
-        <PropertyField
-          key={propertyField.label}
-          verticalAlignTop={propertyField.verticalAlignTop}
-          label={propertyField.label}
-          value={propertyField.value} />
-      )) }
+      <div className='lower-property-fields'>
+        { lowerPropertyFields.map(propertyField => (
+          <PropertyField
+            key={propertyField.label}
+            verticalAlignTop={propertyField.verticalAlignTop}
+            label={propertyField.label}
+            value={propertyField.value} />
+        )) }
+      </div>
     </div>
   );
 };

@@ -56,9 +56,7 @@ const CenterPanelInternal = () => {
           </Suspense>
         </LazyLoadingErrorBoundary>
       </div>
-      <div
-        id='enlarged-picture-panel'
-        className={`picture-sibling-panel ${!isHoverOnProduct ? 'display-none' : ''}`} />
+      <div id='enlarged-picture-panel' className={`picture-sibling-panel ${!isHoverOnProduct ? 'display-none' : ''}`} />
       <div className={`picture-sibling-panel ${isHoverOnProduct ? 'display-none' : ''}`}>
         <ProductSummary />
       </div>

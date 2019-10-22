@@ -1,6 +1,6 @@
 
 ## Glitch Source
-* [Link to Glitch App](https://https://anton-karlovskiy-network-aware-ebay.glitch.me/)
+* [Link to Glitch App](https://anton-karlovskiy-network-aware-ebay.glitch.me/)
 * [Link to Project on Glitch](https://glitch.com/~anton-karlovskiy-network-aware-ebay)
 
 ## Installation
