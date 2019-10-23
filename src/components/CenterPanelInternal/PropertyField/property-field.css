@@ -20,16 +20,6 @@
 }
 
 .property-value {
-  flex: 5;
+  flex: 3;
   min-width: 0;
-}
-
-@media only screen and (min-width: 540px) {
-  .property-label {
-    flex: 1;
-  }
-  
-  .property-value {
-    flex: 3;
-  }
 }

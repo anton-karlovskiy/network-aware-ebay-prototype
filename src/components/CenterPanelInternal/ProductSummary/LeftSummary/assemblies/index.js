@@ -67,11 +67,11 @@ const ShippingPropertyValue = () => (
   <>
     <LineWrapper>
       <strong className='bold-font-color'>$56.00</strong>
-      <span className='ellipsis'>&nbsp;&nbsp;&nbsp;USPS Priority Mail Express International |&nbsp;</span>
+      <span className='ellipsis'>&nbsp;&nbsp;&nbsp;USPS Priority Mail Express International</span>
       <a
         className='generic-font-color minor-font-size ellipsis'
         href='https://www.ebay.com/itm/Nike-Flex-Run-2016-Mens-Runinng-Shoe-Crimson-Black-830369-601-sz-11/152669264255?var=452220570389&hash=item238bcc197f:m:m8JGGvA8IYbBZVTWARQvq5g#shpCntId'>
-        See details
+        &nbsp;| See details
       </a>
     </LineWrapper>
     <div className='minor-font-size'>
@@ -152,11 +152,11 @@ const PaymentsPropertyValue = () => {
 
 const ReturnsPropertyValue = () => (
   <LineWrapper>
-    <span className='ellipsis'>30 day returns. Buyer pays for return shipping |&nbsp;</span>
+    <span className='ellipsis'>30 day returns. Buyer pays for return shipping</span>
     <a
       className='generic-font-color minor-font-size ellipsis'
       href='https://www.ebay.com/itm/Nike-Flex-Run-2016-Mens-Runinng-Shoe-Crimson-Black-830369-601-sz-11/152669264255?var=452220570389&hash=item238bcc197f:m:m8JGGvA8IYbBZVTWARQvq5g#shpCntId'>
-      See details
+      &nbsp;| See details
     </a>
   </LineWrapper>
 );
