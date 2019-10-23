@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import PropertyField from '../../../PropertyField';
+import PropertyField from '../../PropertyField';
 import {
   ConditionPropertyValue,
   USSizePropertyValue,
