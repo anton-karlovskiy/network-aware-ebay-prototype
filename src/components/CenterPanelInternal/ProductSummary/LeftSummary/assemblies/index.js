@@ -4,7 +4,9 @@ import React from 'react';
 const QuestionTooltipMark = () => (
   <div
     style={{
-      background: 'url(https://ir.ebaystatic.com/pictures/aw/pics/cmp/ds3/sprds3_18.png) no-repeat scroll -215px -406px transparent',
+      backgroundImage: 'url(https://ir.ebaystatic.com/pictures/aw/pics/cmp/ds3/sprds3_18.png)',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '-215px -406px',
       cursor: 'pointer',
       width: '16px',
       height: '16px'

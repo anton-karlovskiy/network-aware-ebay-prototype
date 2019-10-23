@@ -1,5 +1,6 @@
 
 body {
+  margin: 0;
   background-color: #f8f8f8;
   font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,13 +1,17 @@
 
 import React from 'react';
 
+import Header from './components/Header';
 import CenterPanelInternal from './components/CenterPanelInternal';
 import './App.css';
 
 const App = () => {
   return (
     <div className='App'>
-      <CenterPanelInternal />
+      <Header />
+      <div className='body'>
+        <CenterPanelInternal />
+      </div>
     </div>
   );
 };
