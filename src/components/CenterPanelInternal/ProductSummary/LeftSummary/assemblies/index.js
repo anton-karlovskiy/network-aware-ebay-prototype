@@ -88,14 +88,15 @@ const ShippingPropertyValue = () => (
 const DeliveryPropertyValue = () => (
   <>
     <LineWrapper>
-      <span>Estimated between&nbsp;</span>
-      <strong className='bold-font-color'>Wed. Nov. 6 and Tue. Dec. 3</strong>
+      <span className='ellipsis'>Estimated between&nbsp;</span>
+      <strong className='bold-font-color ellipsis'>Wed. Nov. 6 and Tue. Dec. 3</strong>
     </LineWrapper>
     <div className='minor-font-size'>
       <LineWrapper>
-        <span>Seller ships within 1 day after&nbsp;</span>
+        <span className='ellipsis'>Seller ships within 1 day after&nbsp;</span>
         <a
           style={{color: 'rgb(106, 41, 185)'}}
+          className='ellipsis'
           href='https://pages.ebay.com/ru/en-us/help/buy/contextual/domestic-handling-time.html'>
           receiving cleared payments.
         </a>
