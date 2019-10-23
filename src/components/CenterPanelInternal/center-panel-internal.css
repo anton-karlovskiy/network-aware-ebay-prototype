@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
 }
 
 .display-none {
@@ -13,9 +14,24 @@
   max-width: 280px;
 }
 
+.picture-panel .small-image {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+
 @media only screen and (min-width: 600px) {
+  .center-panel-internal {
+    background-color: unset;
+  }
+
   .picture-panel {
     max-width: 500px;
+  }
+
+  .picture-panel .small-image {
+    border: 1px solid #ccc;
+    border-radius: 3px;
   }
 }
 
