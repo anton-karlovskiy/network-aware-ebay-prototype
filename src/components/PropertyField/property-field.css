@@ -10,7 +10,7 @@
 }
 
 .property-top-alignment {
-  align-items: top;
+  align-items: flex-start;
 }
 
 .property-label {
@@ -20,5 +20,16 @@
 }
 
 .property-value {
-  flex: 3;
+  flex: 5;
+  min-width: 0;
+}
+
+@media only screen and (min-width: 540px) {
+  .property-label {
+    flex: 1;
+  }
+  
+  .property-value {
+    flex: 3;
+  }
 }

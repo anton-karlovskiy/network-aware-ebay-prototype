@@ -7,23 +7,9 @@
   border-bottom: 1px solid #CCC;
 }
 
-.lower-property-fields {
-  display: none;
-}
-
-@media only screen and (min-width: 480px) {
-  .lower-property-fields {
-    display: block;
-  }
-}
-
 @media only screen and (min-width: 600px) {
   .left-summary {
     margin-right: 12px;
-  }
-
-  .lower-property-fields {
-    display: none;
   }
 }
 

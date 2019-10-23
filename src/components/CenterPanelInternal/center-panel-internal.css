@@ -2,16 +2,28 @@
 .center-panel-internal {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .display-none {
   display: none;
 }
 
+.picture-panel {
+  max-width: 280px;
+}
+
+@media only screen and (min-width: 600px) {
+  .picture-panel {
+    max-width: 500px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .center-panel-internal {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .picture-panel {
