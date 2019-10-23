@@ -12,6 +12,7 @@
 
 .picture-panel {
   max-width: 280px;
+  max-height: 280px;
 }
 
 .picture-panel .small-image {
@@ -27,6 +28,7 @@
 
   .picture-panel {
     max-width: 500px;
+    max-height: 500px;
   }
 
   .picture-panel .small-image {
@@ -44,6 +46,8 @@
 
   .picture-panel {
     width: 35%;
+    max-width: unset;
+    max-height: unset;
   }
   
   .picture-sibling-panel {
